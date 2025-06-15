@@ -455,3 +455,64 @@ footer .button:hover {
     color: #b80257 !important;
     transition: all 0.5s ease-in-out
 }
+
+.nav .sub-menu {
+    display: none;
+    position: absolute;
+    background: #fff;
+    min-width: 180px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    padding: 0;
+    margin: 0;
+
+}
+
+.nav li {
+    position: relative;
+
+}
+
+.nav li:hover>.sub-menu {
+    display: block;
+}
+
+.sub-menu li:hover {
+    background-color: #b80257;
+
+
+}
+
+.nav .sub-menu li a {
+    padding: 10px 20px;
+    color: #0009;
+    border-bottom: 1px solid rgba(194, 194, 194, 0.6);
+
+}
+
+.sub-menu a:hover {
+    color: #fff !important;
+    transform: translateX(8px);
+    transition: transform 0.3s ease, color 1s ease;
+}
+
+#toggle-search:checked~.search-bar {
+    display: flex;
+
+}
+
+.go-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #b80257;
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

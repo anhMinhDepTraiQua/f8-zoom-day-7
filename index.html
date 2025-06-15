@@ -25,24 +25,74 @@
                 <div class="container">
                     <a href="#">
                         <img src="https://themazine.com/html/scholars-lms/images/logo/logo.png" alt="logo scholars"
-                            class="logo">
+                            class="logo" id="logo">
                     </a>
 
                     <div class="left-wrapper">
                         <div class="nav">
                             <ul>
-                                <li><a href="#">HOME</a></li>
-                                <li><a href="#">COURSES</a></li>
-                                <li><a href="#">EVENTS</a></li>
-                                <li><a href="#">PAGES</a></li>
-                                <li><a href="#">PORTFOLIO</a></li>
-                                <li><a href="#">BLOG</a></li>
-                                <li><a href="#">SHOP</a></li>
+                                <li><a href="#">HOME</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Home Version One</a></li>
+                                        <li><a href="#">Home Version Two</a></li>
+                                        <li><a href="#">Home Video Background</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#">COURSES</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Courses 2 Column</a></li>
+                                        <li><a href="#">Course 3 Column</a></li>
+                                        <li><a href="#">Course Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">EVENTS</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Events List</a></li>
+                                        <li><a href="#">Events Grid</a></li>
+                                        <li><a href="#">Event Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">PAGES</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Our Teacher</a></li>
+                                        <li><a href="#">Teacher Profile</a></li>
+                                        <li><a href="#">About US</a></li>
+                                        <li><a href="#">Error Page</a></li>
+                                        <li><a href="#">FAQ Page</a></li>
+                                        <li><a href="#">Login</a></li>
+                                        <li><a href="#">Sign Up</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">PORTFOLIO</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Portfolio 2 Column</a></li>
+                                        <li><a href="#">Portfolio 3 Column</a></li>
+                                        <li><a href="#">Portfolio 4 Column</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">BLOG</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">SHOP</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Shop Page</a></li>
+                                        <li><a href="#">Shop Details</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="#">CONTACT</a></li>
                             </ul>
+
+
                         </div>
+                        <!-- user actions -->
+                        <input type="checkbox" id="toggle-search" class="toggle-search" hidden>
                         <div class="actions">
-                            <i class="fa-solid fa-magnifying-glass search"></i>
+                            <label for="toggle-search"><i class="fa-solid fa-magnifying-glass search"></i></label>
+
                             <i class="fa-solid fa-cart-shopping cart"></i>
                         </div>
                     </div>
@@ -402,7 +452,11 @@
 
 
     </div>
-
+    <div class="go-to-top">
+        <button class="go-to-top-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </button>
+    </div>
 </body>
 
 </html>
